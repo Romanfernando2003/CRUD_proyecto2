@@ -1,15 +1,20 @@
+//obtiene la fecha actualizada y se muestra en el footer
+let fechaActualizada = new Date();
+let dia = fechaActualizada.getDate();
+let mes = fechaActualizada.getMonth() + 1;
+let año = fechaActualizada.getFullYear();
+let fechaString = `${dia}/${mes}/${año}`;
+document.getElementById("fecha-actualizada").textContent = fechaString;
+
 // Obtiene los elementos del DOM
 const formulario = document.getElementById("formulario");
 const idInput = document.getElementById("idInput");
-
 const nombreInput = document.getElementById("nombreInput");
 const descripcionInput = document.getElementById("descripcionInput");
 const tablaProductos = document.getElementById("tablaProductos");
 
 // Obtener los datos del LocalStorage
 const productos = JSON.parse(localStorage.getItem("productos")) || [];
-
-
 
 // Función para renderizar la tabla de productos
 function renderizarTabla() {
@@ -34,8 +39,7 @@ function agregarProducto(e) {
   e.preventDefault();
 
   // Obtiene los valores del formulario
-  
-  
+
   const id = idInput.value;
   const nombre = nombreInput.value;
   const descripcion = descripcionInput.value;
