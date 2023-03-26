@@ -60,6 +60,16 @@ button:hover {
 	background-color: #3e8e41;
 }
 
+#boton-1 {
+    background-color: orange;
+  }
+
+#boton-2 {
+    background-color: red;
+  }
+
+
+
 table {
 	border-collapse: collapse;
 	width: 100%;

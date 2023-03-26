@@ -26,8 +26,8 @@ function renderizarTabla() {
         <td>${producto.Nombre}</td>
         <td>${producto.Descripcion}</td>
         <td>
-          <button onclick="editarProducto(${producto.ID})">Editar</button>
-          <button onclick="eliminarProducto(${producto.ID})">Eliminar</button>
+          <button onclick="editarProducto(${producto.ID})" id = "boton-1">Editar</button>
+          <button onclick="eliminarProducto(${producto.ID})" id = "boton-2">Eliminar</button>
         </td>
       </tr>
     `;
